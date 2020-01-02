@@ -9,7 +9,7 @@ module.exports = function(api) {
         targets: {
           esmodules: true,
         },
-        corejs: '3.0.0',
+        corejs: 3,
         useBuiltIns: 'usage',
       },
     ],
@@ -17,8 +17,6 @@ module.exports = function(api) {
   ];
   const plugins = [
     '@babel/transform-react-constant-elements',
-    'transform-react-remove-prop-types',
-    'transform-react-pure-class-to-function',
     '@babel/plugin-transform-runtime',
     'react-hot-loader/babel',
 
